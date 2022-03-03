@@ -1,25 +1,25 @@
-@import url("fluttershy/css/basic-assumptions.css");
+@import url("@johncision/fluttershy/dist/css/basic-assumptions.css");
 
 /*  */
-@import url("fluttershy/css/button/button.css");
-@import url("fluttershy/css/button/theme-base.css");
+@import url("@johncision/fluttershy/dist/css/button/button.css");
+@import url("@johncision/fluttershy/dist/css/button/theme-base.css");
 
 /*  */
-@import url("css/welcome-hub.css");
-@import url("css/button.css");
-@import url("css/link.css");
+@import url("../css/welcome-hub.css");
+@import url("../css/button.css");
+@import url("../css/link.css");
 
-@import url("css/wh-dashboard.css");
-@import url("css/wh-nav.css");
-@import url("css/wh-feed.css");
-@import url("css/wh-last-viewed.css");
-@import url("css/wh-tile.css");
-@import url("css/wh-tile.theme.css");
-@import url("css/wh-tile-title-simple.css");
-@import url("css/wh-tile-title-multiline.css");
-@import url("css/wh-application-frame.css");
-@import url("css/wh-basic-list-item.css");
-@import url("css/wh-tile-list.css");
+@import url("../css/wh-dashboard.css");
+@import url("../css/wh-nav.css");
+@import url("../css/wh-feed.css");
+@import url("../css/wh-last-viewed.css");
+@import url("../css/wh-tile.css");
+@import url("../css/wh-tile.theme.css");
+@import url("../css/wh-tile-title-simple.css");
+@import url("../css/wh-tile-title-multiline.css");
+@import url("../css/wh-application-frame.css");
+@import url("../css/wh-basic-list-item.css");
+@import url("../css/wh-tile-list.css");
 
 :host {
 	accent-color: orange;

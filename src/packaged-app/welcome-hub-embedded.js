@@ -3,7 +3,7 @@
 /* eslint-disable immutable/no-mutation */
 /* eslint-disable import/no-internal-modules */
 
-// import style from '../welcome-hub-embedded.css'
+import style from './welcome-hub-embedded.css'
 import { appSetup } from './appSetup.js'
 import { NGC3API, embeddedConfig } from '../lib/ngc3api/index.js'
 import templateStr from './template.html?raw'
@@ -49,6 +49,10 @@ class Element extends HTMLElement {
 
 		const shadowRoot = this.attachShadow({ mode: 'open' })
 		shadowRoot.appendChild(content.cloneNode(true))
+
+		const styleElem = document.createElement('style')
+		styleElem.appendChild(document.createTextNode(style))
+		shadowRoot.appendChild(styleElem)
 
 		this.uiDataHandler = appSetup(shadowRoot)
 	}
