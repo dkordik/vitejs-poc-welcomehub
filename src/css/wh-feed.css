@@ -1,0 +1,36 @@
+#feed {
+	background-color: var(--theme-feed-background-color, red);
+
+	padding: 1em;
+}
+
+ul#feed > li {
+	list-style-type: none;
+
+	border-radius: 5px;
+	border: 1px solid var(--theme-tile-border-color, red);
+	box-shadow: var(--theme-tile-shadow-style, none);
+	background-color: var(--theme-tile-bg-color, red);
+
+	margin-block-end: 1em;
+	padding: 1em;
+
+	display: block;
+}
+
+wh-feed-tile-title {
+	font-style: normal;
+	font-weight: bold;
+
+	line-height: 2em;
+
+	color: var(--theme-common-tile-title-color, red);
+}
+
+wh-feed-tile > ul {
+	list-style: none;
+}
+
+wh-feed-tile > ul a {
+	line-height: 2em;
+}

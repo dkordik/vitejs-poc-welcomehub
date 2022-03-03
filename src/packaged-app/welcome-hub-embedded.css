@@ -1,0 +1,109 @@
+@import url("fluttershy/css/basic-assumptions.css");
+
+/*  */
+@import url("fluttershy/css/button/button.css");
+@import url("fluttershy/css/button/theme-base.css");
+
+/*  */
+@import url("css/welcome-hub.css");
+@import url("css/button.css");
+@import url("css/link.css");
+
+@import url("css/wh-dashboard.css");
+@import url("css/wh-nav.css");
+@import url("css/wh-feed.css");
+@import url("css/wh-last-viewed.css");
+@import url("css/wh-tile.css");
+@import url("css/wh-tile.theme.css");
+@import url("css/wh-tile-title-simple.css");
+@import url("css/wh-tile-title-multiline.css");
+@import url("css/wh-application-frame.css");
+@import url("css/wh-basic-list-item.css");
+@import url("css/wh-tile-list.css");
+
+:host {
+	accent-color: orange;
+	--accent-color: orange;
+	--odd: white;
+	--even: black;
+
+	--theme-body-font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+
+	--theme-application-bar-background-color: var(--odd);
+	--theme-application-bar-text-color: var(--even);
+
+	--theme-non-interactive-page-background: #f7f7f7;
+	--theme-interactive-control-background: var(--odd);
+	--theme-interactive-control-border-color: var(--even);
+	--theme-interactive-control-accent-color: var(--accent-color);
+	--theme-interactive-control-text-color: var(--even);
+	--theme-control-page-boundary-color: var(--event);
+
+	--theme-aside-background-color: var(--odd);
+	--theme-aside-text-color: var(--even);
+
+	/* Button Stuff  */
+	--theme-button-background-color: var(--accent-color);
+	--theme-button-border-color: var(--even);
+	--theme-button-text-color: var(--odd);
+
+	--theme-button-background-color-hover: var(--accent-color);
+	--theme-button-border-color-hover: var(--accent-color);
+	--theme-button-text-color-hover: var(--odd);
+
+	--theme-button-background-color-disabled: darkgrey;
+	--theme-button-border-color-disabled: grey;
+	--theme-button-text-color-disabled: grey;
+
+	--theme-button-background-color-active: white;
+	--theme-button-border-color-active: white;
+	--theme-button-text-color-active: black;
+
+	--theme-button-set-break-color: var(--accent-color);
+
+	--theme-common-tile-title-color: #677078;
+
+	/* Face Icon Button  */
+	--theme-face-icon-color: black;
+	--theme-face-icon-background: lightgrey;
+
+	/* First Time Tile Stuff  */
+	--theme-dashboard-background-color: var(--theme-non-interactive-page-background);
+	--theme-dashboard-tile-background-color: var(--theme-interactive-control-background);
+	--theme-dashboard-tile-border-color: var(--theme-interactive-control-border-color);
+	--theme-dashboard-tile-text-color: var(--theme-interactive-control-text-color);
+
+	--theme-navbar-background-color: black;
+
+	--theme-feed-background-color: #ebeced;
+
+	/* Welcome hub Tile */
+	--theme-dashboard-tile-separator-color: #ebeced;
+	--theme-dashboard-tile-font-color: var(--theme-common-tile-title-color);
+
+	/* WH-TILE THEME SETTINGS */
+	--theme-tile-bg-color: var(--odd);
+	--theme-tile-border-radius: 10px;
+	--theme-tile-border-style: solid 1px;
+	--theme-tile-border-color: #e8e8e8;
+	--theme-tile-shadow-style: 0px 1px 2px 0px #b6b6b6;
+
+	/* WH-BASIC-LIST-ITEM SETTINGS */
+	--theme-basic-list-item-primary-font-size: medium;
+	--theme-basic-list-item-primary-color: #0983ac;
+	--theme-basic-list-item-secondary-font-size: smaller;
+	--theme-basic-list-item-secondary-color: #34404b;
+}
+
+:host {
+	min-height: 100vh;
+	color: var(--even);
+
+	font-family: var(--theme-body-font-family);
+}
+
+welcome-hub {
+	height: 100%;
+	overflow: hidden;
+	background-color: var(--theme-non-interactive-page-background, red);
+}

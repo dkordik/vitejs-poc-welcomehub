@@ -1,0 +1,9 @@
+wh-date-time-display {
+	display: block;
+	padding: 1em;
+	font-style: normal;
+	font-weight: normal;
+	font-size: smaller;
+	line-height: 2em;
+	color: var(--theme-basic-date-time-display-text-color, red);
+}

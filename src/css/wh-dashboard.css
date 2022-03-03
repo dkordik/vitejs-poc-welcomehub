@@ -1,0 +1,25 @@
+wh-tile-dashboard {
+	display: grid;
+	height: fit-content;
+	grid-template-areas:
+		"dashboards searches"
+		"topContent topContent";
+
+	gap: 1em;
+	padding: 1em;
+
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+}
+
+wh-tile#dashboards {
+	grid-area: dashboards;
+}
+
+wh-tile#searches {
+	grid-area: searches;
+}
+
+wh-tile#topContent {
+	grid-area: topContent;
+	grid-column: span 2;
+}

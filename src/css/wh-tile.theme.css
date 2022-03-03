@@ -1,0 +1,7 @@
+wh-tile {
+	background-color: var(--theme-tile-bg-color, red);
+	border-radius: var(--theme-tile-border-radius, unset);
+	border: var(--theme-tile-border-style, solid 1px);
+	border-color: var(--theme-tile-border-color, red);
+	box-shadow: var(--theme-tile-shadow-style, none);
+}

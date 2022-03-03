@@ -1,0 +1,42 @@
+nav {
+	display: block;
+
+	width: 100vw;
+}
+
+nav > h1 {
+	display: block;
+
+	font-size: larger;
+	padding-block: 1em;
+	padding-inline-start: 2em;
+
+	background-color: var(--theme-navbar-background-color, red);
+}
+
+nav > div {
+	background-color: white;
+	padding-block: 1em;
+	padding-inline-start: 1em;
+}
+
+nav > div > span {
+	font-size: larger;
+	font-weight: bold;
+	line-height: 2em;
+
+	vertical-align: middle;
+
+	margin-inline-end: 1ch;
+}
+
+nav > div > p {
+	font-size: smaller;
+
+	color: grey;
+
+	display: inline-block;
+	line-height: 1em;
+
+	vertical-align: middle;
+}

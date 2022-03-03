@@ -1,0 +1,11 @@
+#searchesList,
+#dashboardsList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+ul#searchesList > li:nth-child(n + 4),
+ul#dashboardsList > li:nth-child(n + 4) {
+	display: none;
+}

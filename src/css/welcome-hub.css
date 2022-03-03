@@ -1,0 +1,19 @@
+welcome-hub {
+	display: grid;
+	grid-template-columns: 1fr 302px;
+	grid-template-areas: "dashboard feed";
+
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+welcome-hub::part(dashboard) {
+	grid-area: dashboard;
+
+	height: 100%;
+}
+
+welcome-hub::part(feed) {
+	grid-area: feed;
+}

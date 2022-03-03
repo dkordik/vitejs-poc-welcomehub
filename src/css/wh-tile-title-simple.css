@@ -1,0 +1,11 @@
+wh-tile-title-simple {
+	display: block;
+	border-bottom: 1px solid var(--theme-dashboard-tile-separator-color, red);
+	color: var(--theme-dashboard-tile-font-color, red);
+	padding: 1em;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 2em;
+}

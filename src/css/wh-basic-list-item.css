@@ -1,0 +1,24 @@
+wh-basic-list-item {
+	min-width: 2em;
+	max-width: 100%;
+	padding: 0.6em;
+	display: inline-block;
+	margin: 0;
+}
+
+wh-basic-list-item::part(primary) {
+	max-width: 100%;
+	padding: 0.25em 0.25em;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+wh-basic-list-item::part(secondary) {
+	max-width: 100%;
+	padding: 0.25em 0.25em;
+	display: block;
+	font-size: var(--theme-basic-list-item-secondary-font-size);
+	color: var(--theme-basic-list-item-secondary-color);
+}

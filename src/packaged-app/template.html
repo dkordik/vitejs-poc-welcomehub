@@ -1,0 +1,63 @@
+<template>
+	<welcome-hub>
+		<wh-tile-dashboard slot="dashboard">
+			<wh-tile id="searchs">
+				<wh-tile-title-simple slot="title">Searches</wh-tile-title-simple>
+				<ul id="searchesList" slot="body">
+					<!-- dynamic content here -->
+				</ul>
+			</wh-tile>
+
+			<wh-tile id="dashboards">
+				<wh-tile-title-simple slot="title">Dashboards</wh-tile-title-simple>
+				<ul id="dashboardsList" slot="body">
+					<!-- dynamic content here -->
+				</ul>
+			</wh-tile>
+		</wh-tile-dashboard>
+
+		<ul id="feed" slot="feed">
+			<!--  -->
+			<li>
+				<wh-feed-tile>
+					<wh-feed-tile-title slot="title">Knowledge Guides</wh-feed-tile-title>
+					<ul id="knowledgeGuidesList">
+						<li>
+							<a href="https://help.cision.com/help/introduction-to-cision">
+								Introduction to Cision
+							</a>
+						</li>
+						<li>
+							<a href="https://help.cision.com/help/integration-instructions">
+								Email Integration
+							</a>
+						</li>
+						<li>
+							<a href="https://help.cision.com/help/2-introduction-to-the-platform">
+								Introduction to the Platform
+							</a>
+						</li>
+
+						<li>
+							<a href="https://help.cision.com/help/navigating-the-platform">
+								Navigating the Platform
+							</a>
+						</li>
+
+						<li>
+							<a href="https://help.cision.com/help/user-management"> Admin/User Management </a>
+						</li>
+
+						<li>
+							<a href="https://help.cision.com/help/monitoring-basics"> Media Monitoring Basics </a>
+						</li>
+
+						<li>
+							<a href="https://help.cision.com/help/monitoring-searches"> Monitoring Searches </a>
+						</li>
+					</ul>
+				</wh-feed-tile>
+			</li>
+		</ul>
+	</welcome-hub>
+</template>

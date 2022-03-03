@@ -1,0 +1,15 @@
+wh-tile {
+	height: auto;
+	min-width: 50ch;
+	display: inline-block;
+}
+
+wh-tile::part(title) {
+	grid-area: tile;
+	display: block;
+}
+
+wh-tile::part(body) {
+	grid-area: body;
+	display: block;
+}
