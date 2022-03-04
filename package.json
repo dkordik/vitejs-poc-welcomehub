@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "test-serve-prod": "npm run build && npx http-server -S -C .cert/cert.pem -K .cert/key.pem -o -a localhost --cors dist/"
   },
   "dependencies": {
     "@johncision/applejacks": "^5.0.1",
